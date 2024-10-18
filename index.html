@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Startup Page</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo Section -->
+        <div class="center-logo">
+            <img src="logo.png" alt="Logo" class="logo"> <!-- Replace with your logo -->
+        </div>
+
+        <!-- Search Bar Section -->
+        <div class="search-bar">
+            <!-- Search Icon on the left inside input -->
+            <div class="search-input-wrapper">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search with Google" id="search-input">
+            </div>
+
+            <!-- Search Button (Arrow) on the far right -->
+            <button onclick="search()">&#x27A4;</button> <!-- Arrow symbol for button -->
+        </div>
+
+        <!-- Categories Section -->
+        <div class="categories">
+            <!-- First Category: Coding Platforms -->
+            <div class="category">
+                <div class="icon"><i class="fas fa-terminal"></i></div> <!-- Terminal icon -->
+                <ul>
+                    <li><a href="https://www.hackerrank.com" target="_blank">Hackerrank</a></li>
+                    <li><a href="https://www.codechef.com" target="_blank">CodeChef</a></li>
+                    <li><a href="https://www.leetcode.com" target="_blank">LeetCode</a></li>
+                    <li><a href="https://www.hackerearth.com" target="_blank">HackerEarth</a></li>
+                    <li><a href="https://www.codeforces.com" target="_blank">CodeForces</a></li>
+                </ul>
+            </div>
+
+            <!-- Second Category: Programming Tools -->
+            <div class="category">
+                <div class="icon"><i class="fas fa-code"></i></div> <!-- Code icon -->
+                <ul>
+                    <li><a href="https://www.python.org" target="_blank">Python</a></li>
+                    <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+                    <li><a href="https://devdocs.io" target="_blank">DevDocs</a></li>
+                    <li><a href="https://stackoverflow.com" target="_blank">StackOverflow</a></li>
+                </ul>
+            </div>
+
+            <!-- Third Category: Media -->
+            <div class="category">
+                <div class="icon"><i class="fas fa-tv"></i></div> <!-- TV icon -->
+                <ul>
+                    <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                    <li><a href="https://drive.google.com" target="_blank">Drive</a></li>
+                    <li><a href="https://mail.google.com" target="_blank">Gmail</a></li>
+                    <li><a href="https://photos.google.com" target="_blank">Photos</a></li>
+                    <li><a href="https://www.reddit.com" target="_blank">Reddit</a></li>
+                </ul>
+            </div>
+
+            <!-- Fourth Category: Music -->
+            <div class="category">
+                <div class="icon"><i class="fas fa-music"></i></div> <!-- Music icon -->
+                <ul>
+                    <li><a href="https://www.spotify.com" target="_blank">Spotify</a></li>
+                    <li><a href="https://www.soundcloud.com" target="_blank">SoundCloud</a></li>
+                    <li><a href="https://www.deezer.com" target="_blank">Deezer</a></li>
+                    <li><a href="https://www.mixcloud.com" target="_blank">MixCloud</a></li>
+                    <li><a href="https://www.radiocore.org" target="_blank">Core Radio</a></li>
+                </ul>
+            </div>
+
+            <!-- Fifth Category: Creative Platforms -->
+            <div class="category">
+                <div class="icon"><i class="fas fa-paint-brush"></i></div> <!-- Paint brush icon -->
+                <ul>
+                    <li><a href="https://www.behance.net" target="_blank">Behance</a></li>
+                    <li><a href="https://www.deviantart.com" target="_blank">DeviantArt</a></li>
+                    <li><a href="https://www.unsplash.com" target="_blank">Unsplash</a></li>
+                    <li><a href="https://www.dribbble.com" target="_blank">Dribbble</a></li>
+                    <li><a href="https://www.tumblr.com" target="_blank">Tumblr</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

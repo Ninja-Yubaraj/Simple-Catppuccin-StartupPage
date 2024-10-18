@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e2e; /* Base from Catppuccin Mocha */
+    color: #cdd6f4; /* Text color from Catppuccin Mocha */
+    font-family: 'Poppins', sans-serif; /* Updated font to Poppins */
+    font-weight: 300; /* Light weight for a soft look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.center-logo {
+    margin-bottom: 20px;
+}
+
+.center-logo .logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Search Bar Section */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative; /* For positioning elements */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Soft shadow around search bar */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    background-color: #313244; /* Surface0 background */
+}
+
+/* Wrapper for input and search icon */
+.search-input-wrapper {
+    position: relative;
+    flex-grow: 1;
+}
+
+.search-input-wrapper input {
+    padding: 12px 40px 12px 40px; /* Extra padding for the search icon and button */
+    font-size: 1.1rem;
+    font-weight: 400; /* Regular weight for input text */
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    background-color: #313244;
+    color: #cdd6f4; /* Text */
+    box-shadow: none; /* Remove inner shadow */
+    outline: none;
+}
+
+/* Search icon inside the input */
+.search-input-wrapper .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #f5c2e7; /* Pink from Catppuccin Mocha */
+    font-size: 1.2rem;
+}
+
+/* Placeholder text style */
+.search-input-wrapper input::placeholder {
+    color: #9399b2; /* Overlay2 from Catppuccin Mocha */
+    font-weight: 300; /* Lighter placeholder text */
+}
+
+/* Search Button */
+.search-bar button {
+    padding: 12px 16px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #45475a; /* Surface1 from Catppuccin Mocha */
+    color: #f5c2e7; /* Pink from Catppuccin Mocha */
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Add shadow to the button */
+}
+
+.search-bar button:hover {
+    background-color: #585b70; /* Surface2 from Catppuccin Mocha */
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.category {
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: calc(20% - 30px);
+    min-width: 150px;
+    max-width: 200px;
+    background-color: #313244; /* Background of each category box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Soft shadow for category boxes */
+    padding: 20px 15px; /* Padding inside the boxes */
+    transition: transform 0.2s ease; /* Add a subtle hover effect */
+}
+
+.category:hover {
+    transform: translateY(-5px); /* Lift the box on hover */
+}
+
+.category .icon {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #f38ba8; /* Red from Catppuccin Mocha */
+}
+
+.category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category li {
+    margin: 8px 0;
+}
+
+.category li a {
+    text-decoration: none;
+    color: #89b4fa; /* Blue from Catppuccin Mocha */
+    font-size: 1rem;
+    font-weight: 400; /* Regular font weight */
+    transition: color 0.2s ease;
+}
+
+.category li a:hover {
+    color: #f9e2af; /* Yellow from Catppuccin Mocha */
+}
