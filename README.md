@@ -1,6 +1,6 @@
 # Simple Catppuccin Startup Page
 
-![](https://imgur.com/a/dI5JPPg)
+![](https://i.imgur.com/ABJz0ZF.png)
 
 Live preview: [here](https://ninja-yubaraj.github.io/Simple-Catppuccin-StartupPage/)
 
