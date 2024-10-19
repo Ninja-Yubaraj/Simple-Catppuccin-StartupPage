@@ -1,7 +1,7 @@
 # Simple Catppuccin Startup Page
 
-![](LINK)
+![](https://imgur.com/a/dI5JPPg)
 
-Live preview: [Coming Soon!](LINK)
+Live preview: [here](https://ninja-yubaraj.github.io/Simple-Catppuccin-StartupPage/)
 
-Colors by: [Coming Soon!](LINK)
+Color scheme: [Catppuccin](https://catppuccin.com/)
