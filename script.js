@@ -26,6 +26,13 @@ function search() {
     }
 }
 
+// Add event listener for Enter key press inside search input
+document.getElementById('search-input').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        search(); // Trigger the search function when Enter is pressed
+    }
+});
+
 // Toggle dropdown visibility when magnifying glass is clicked
 document.getElementById('search-icon').addEventListener('click', function() {
     const dropdown = document.getElementById('search-engine-dropdown');
