@@ -33,6 +33,43 @@ body {
     height: auto;
 }
 
+.hidden {
+    display: none;
+}
+
+/* Dropdown styling */
+#search-engine-dropdown {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: #313244;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+.dropdown-item {
+    padding: 10px;
+    color: #cdd6f4;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #585b70; /* Slight hover effect */
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #f5c2e7;
+    font-size: 1.2rem;
+    cursor: pointer; /* Make the icon clickable */
+}
+
 /* Search Bar Section */
 .search-bar {
     display: flex;

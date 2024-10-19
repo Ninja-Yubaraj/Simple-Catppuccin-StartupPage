@@ -22,8 +22,15 @@
         <div class="search-bar">
             <!-- Search Icon on the left inside input -->
             <div class="search-input-wrapper">
-                <i class="fas fa-search search-icon"></i>
+                <i class="fas fa-search search-icon" id="search-icon"></i> <!-- Updated to add an id for JS -->
                 <input type="text" placeholder="Search with Google" id="search-input">
+                
+                <!-- Dropdown for search engine selection -->
+                <div id="search-engine-dropdown" class="dropdown hidden">
+                    <div class="dropdown-item" onclick="setSearchEngine('Google')">Google</div>
+                    <div class="dropdown-item" onclick="setSearchEngine('DuckDuckGo')">DuckDuckGo</div>
+                    <div class="dropdown-item" onclick="setSearchEngine('Bing')">Bing</div>
+                </div>
             </div>
 
             <!-- Search Button (Arrow) on the far right -->

@@ -5,6 +5,7 @@ let currentEngine = 'Google';
 function setSearchEngine(engine) {
     currentEngine = engine;
     document.getElementById('search-input').placeholder = `Search with ${engine}`;
+    document.getElementById('search-engine-dropdown').classList.add('hidden'); // Hide dropdown after selection
 }
 
 // Function to perform the search
@@ -24,3 +25,9 @@ function search() {
         window.open(searchUrl, '_blank');
     }
 }
+
+// Toggle dropdown visibility when magnifying glass is clicked
+document.getElementById('search-icon').addEventListener('click', function() {
+    const dropdown = document.getElementById('search-engine-dropdown');
+    dropdown.classList.toggle('hidden');
+});
