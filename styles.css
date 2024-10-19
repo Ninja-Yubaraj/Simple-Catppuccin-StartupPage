@@ -29,8 +29,10 @@ body {
 }
 
 .center-logo .logo {
-    width: 100px;
-    height: auto;
+    width: 30vw; /* Increase the width to 30% of the viewport width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; /* Set a larger maximum width for larger screens */
+    min-width: 120px; /* Ensure it doesn't shrink too much on small screens */
 }
 
 .hidden {
